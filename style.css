@@ -25,10 +25,6 @@ body {
 	background-color: #ffcb07;
 }
 
-.counter-wrap {
-	width: 10%;
-}
-
 
 #sfcg1jf59l32c6m1edty6rj9g1kkwudtp8w {
 	display: inline-block;
@@ -231,21 +227,6 @@ body {
 	}
 	.counter-text {
 	font-size: 10px;
-	}
-}
-
-@media screen and (max-width: 500px) {
-	html {
-		font-size: 5px;
-	}
-	.navbar-brand {
-		font-size: 1rem;
-	}	
-	.file-upload {
-		width: 55%;
-		}
-	.counter-text {
-	font-size: 2px;
 	}
 }
 
