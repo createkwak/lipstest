@@ -19,21 +19,35 @@ font-family: 'Jua', sans-serif;
 }
 
 body {
-	background-size: 100%;
-	background-image: url("img/back.jpg");
-	background-repeat: repeat-y;
-	background-color: #09628a; 
+	background-image: url("img/back2.png");
+	background-size: cover;
+    background-repeat: no-repeat;
+	background-color: #ffcb07;
 }
+
+.counter-wrap {
+	width: 10%;
+}
+
+
+#sfcg1jf59l32c6m1edty6rj9g1kkwudtp8w {
+	display: inline-block;
+}
+
 .navbar-nav .nav-item .nav-link {
 	color: #fff;
 }
 
 .navbar-nav .nav-item .nav-link:hover {
-	color: #fcbb39;
+	color: #F26458;
 }
 
 .text-center {
 	color: #2C3E50;
+}
+
+.counter-text {
+	font-size: 15px;
 }
 
 .file-upload {
@@ -167,13 +181,7 @@ body {
 .navbar-light .navbar-brand {
 	line-height: 1.68;
 	text-align: left;
-	color: #fcbb39;
-}
-
-.navbar-light .navbar-brand:hover {
-	line-height: 1.68;
-	text-align: left;
-	color: #fcbb39;
+	color: #000;
 }
 
 
@@ -190,8 +198,6 @@ body {
 
 .subtitle {
 	text-align: center;
-	text-shadow: 2px 2px 5px black;
-	color: #ffff00;
 }
 
 .upload {
@@ -222,6 +228,24 @@ body {
 	}
 	.navbar-brand {
 		font-size: 2rem;
+	}
+	.counter-text {
+	font-size: 10px;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	html {
+		font-size: 5px;
+	}
+	.navbar-brand {
+		font-size: 1rem;
+	}	
+	.file-upload {
+		width: 55%;
+		}
+	.counter-text {
+	font-size: 2px;
 	}
 }
 

@@ -65,7 +65,7 @@
             <input class="file-upload-input" type='file' onchange="readURL(this);" accept="image/*" />
 				<div class="drag-text">
 					<img src="img/lips.svg" class="mt-5 upload" />
-					<h2 class="mb-5 pt-4 upload-text">입술사진 올리기</h2>
+					<h2 class="mb-5 pt-4 upload-text">입술 냉큼 올리소</h2>
 				</div>
 			</div>
 		<h6 class="pt-2 mini-text">★올린 사진은 저장되지 않습니다</h6>
@@ -236,4 +236,243 @@ The above copyright notice and this permission notice shall be included in all c
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  -->
+</html><!DOCTYPE html>
+<html>
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<link href="https://fonts.googleapis.com/css?family=Jua&display=swap" rel="stylesheet" />
+		<!-- Bootstrap CSS -->
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+			crossorigin="anonymous"
+		/>
+<!-- Go to www.addthis.com/dashboard to customize your tools -->
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5fdb51d4c6fc3438"></script>
+
+		<title>2021년 입술 운세테스트</title>
+		<meta
+			name="subject"
+			content="입술로 보는 인공지능 2021년 신년운세 테스트로 1년 동안 내 인생을 미리 알아보세요"
+		/>
+		<meta
+			name="keywords"
+			content="입술 테스트,인공지능 운세테스트, 2021년 운세테스트, 신년운세 테스트, 2021년 새해운세, 올해운세, 신년운세 보기, 2021 사주팔자, 2021 토정비결, 웃긴 테스트,사진 테스트,재미난 테스트"
+		/>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+
+	<body>
+		<nav class="navbar navbar-expand-lg navbar-light nav-distance">
+			<div class="container-fluid">
+				<a class="navbar-brand" href="#">입술 운세테스트</a>
+				<button
+					class="navbar-toggler"
+					type="button"
+					data-bs-toggle="collapse"
+					data-bs-target="#navbarNav"
+					aria-controls="navbarNav"
+					aria-expanded="false"
+					aria-label="Toggle navigation"
+				>
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarNav">
+					<ul class="navbar-nav">
+						<li class="nav-item">
+							<a class="nav-link" href="#">블로그</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">유튜브</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<section class="section">
+			<h1 class="title">2021년 입술 운세테스트</h1>
+			<h2 class="subtitle">인공지능이 알려주는 새해운세</h2>
+		</section>
+    <script class="jsbin" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <div class="mt-3 container file-upload">
+        <div class="image-upload-wrap">
+            <input class="file-upload-input" type='file' onchange="readURL(this);" accept="image/*" />
+				<div class="drag-text">
+					<img src="img/lips.svg" class="mt-5 upload" />
+					<h2 class="mb-5 pt-4 upload-text">입술 냉큼 올리소</h2>
+				</div>
+			</div>
+		<h6 class="pt-2 mini-text">★올린 사진은 저장되지 않습니다</h6>
+			<div class="file-upload-content">
+				<img class="file-upload-image" id="face-image" src="#" alt="your image" />
+				<div id="loading" class="animated bounce">
+                <div class="spinner-border" role="status">
+                    <span class="sr-only">Loading...</span>
+                </div>
+                <p class="text-center">AI가 당신의 입술운세를 분석중입니다.</p>
+            </div>
+				<p class="result-message"></p>
+                <!-- Go to www.addthis.com/dashboard to customize your tools -->
+                <div class="addthis_inline_share_toolbox"></div>
+            
+				<div class="pt-3 image-title-wrap">
+					<button type="button p-2" class="try-again-btn" onclick="removeUpload()">
+						<span class="try-again-text">다른 사진으로 재시도</span>
+					</button>
+				</div>
+			</div>
+		</div>
+   <footer class="footer pt-5 container d-flex justify-content-center">
+        <div>
+            <p>&copy; 입술운세 Luckylips 2021. All Rights Reserved. </p>
+        </div>
+    </footer>
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+			crossorigin="anonymous"
+		></script>
+		<script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.3.1/dist/tf.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@0.8/dist/teachablemachine-image.min.js"></script>
+		<script>
+			function readURL(input) {
+				if (input.files && input.files[0]) {
+					var reader = new FileReader();
+					reader.onload = function (e) {
+						$('.image-upload-wrap').hide();
+ 						$('#loading').show();
+						$('.file-upload-image').attr('src', e.target.result);
+						$('.file-upload-content').show();
+						$('.image-title').html(input.files[0].name);
+					};
+					reader.readAsDataURL(input.files[0]);
+					init().then(() => {
+						console.log('hello');
+						predict();
+						$('#loading').hide();
+					});
+				} else {
+					removeUpload();
+				}
+			}
+
+			function removeUpload() {
+				$('.file-upload-input').replaceWith($('.file-upload-input').clone());
+				$('.file-upload-content').hide();
+				$('.image-upload-wrap').show();
+			}
+			$('.image-upload-wrap').bind('dragover', function () {
+				$('.image-upload-wrap').addClass('image-dropping');
+			});
+			$('.image-upload-wrap').bind('dragleave', function () {
+				$('.image-upload-wrap').removeClass('image-dropping');
+			});
+		</script>
+		<script type="text/javascript">
+			// More API functions here:
+			// https://github.com/googlecreativelab/teachablemachine-community/tree/master/libraries/image
+
+			// the link to your model provided by Teachable Machine export panel
+			const URL = 'https://teachablemachine.withgoogle.com/models/XvWv0D8nY/';
+
+			let model, webcam, labelContainer, maxPredictions;
+
+			// Load the image model and setup the webcam
+			async function init() {
+				const modelURL = URL + 'model.json';
+				const metadataURL = URL + 'metadata.json';
+				model = await tmImage.load(modelURL, metadataURL);
+				maxPredictions = model.getTotalClasses();
+				for (let i = 0; i < maxPredictions; i++);
+				}
+			
+			async function predict() {
+				var image = document.getElementById('face-image');
+				const prediction = await model.predict(image, false);
+				prediction.sort((a, b) => parseFloat(b.probability) - parseFloat(a.probability));
+				console.log(prediction[0].className);
+				var resultTitle, resultExplain;
+				switch (prediction[0].className) {
+					case "bow":
+						resultTitle = "예민보스의 입술상"
+						resultExplain = "예민한 성격탓에 더러운걸 못보는자당신은 사람들의 말투와 행동에 있어 예민하게 대처하며 고쳐주는 성향으로 당신을 통해 잘못된 언행을 반성하는 사람들이 늘어나는 2021년을 보내게 될 것입니다. 예민한 성격만큼 할말은 해야 속이 후련한 덕분에 누군가는 이를 받아들이고 바뀌지만 누군가는 당신과 날이 선 대립을 할 수 있으니 예민함을 타인에게 표현할때는 주의하길 바랍니다"
+						break;
+					case "full":
+						resultTitle = "무탈의 입술상"
+						resultExplain = "무탈하게 평온한 삶을 꿈꾸는자. 당신은 누구보다 평범한 2021년을 살 것입니다. 작년보다 더 나아지지도 그렇다고 더 암울하지도 않은 삶을 살게 될 것입니다. 돈도 사랑도 인간관계도 얻을 것도 잃을 것도 없는 한래를 무난하게 보낼 것으로 보입니다"
+						break;
+						case "heart":
+						resultTitle = "욕망의 입술상"
+						resultExplain = "남보다 하나라도 더 먹어야하고 하나라도 더 잘나야하는 욕심주의자. 당신의 2021년은 누구보다 앞선 삶을 살게되지만 그런 욕심으로 인해서 다가오는 스트레스가 발목을 잡을 수 있습니다. 건강에 어느 떄보다 유의해야할 한해를 보낼 수 있으니 주의하길 바랍니다"
+						break;
+					case "round":
+						resultTitle = "옹졸의 입술상"
+						resultExplain = "속좁은 밴댕이를 먹은자. 당신은 사람들의 사소한 말 한마디에도 쉽게 영향을 받으며 상처 받는 2021년을 살 것입니다. 자신의 성향때문에 혼자서 하는 일이 맞으며 타인과 같이 엮이는 일에 있어서는 뒷담화를 당하며 구설수에 오를 수 있으니 일을 택함에 있어 주의하길 바랍니다"
+						break;
+						case "thin":
+						resultTitle = "아픔의 입술상"
+						resultExplain = "몸도 마음도 아픔이 많은자. 당신은 타인을 먼저 배려하다가 오히려 몸도 마음도 상처를 받는 2021년을 살 것입니다. 마음이 따뜻한걸 당연하게 생각하는 사람들이 많으니 이런 이들과는 안전거리를 두는 연습을 하는게 좀더 대우받을 수 있으니 이점을 주의하길 바랍니다"
+						break;
+					case "wide":
+						resultTitle = "충동의 입술상"
+						resultExplain = "감정의 파도에 올라탄 자. 당신은 감정이 롤러코스터를 타는 2021년을 살 것입니다. 인간관계에 있어서 극도의 기쁨과 슬픔을 함께 경험하는 한해가 될 것입니다. 평소에 알던 지인들과 문제될 상황이 발생할 수 있으니 사람과 연락하고 만나는 부분에 대해서는 한해동안 더 주의하길 바랍니다"
+						break;
+					default:
+						resultTitle = "예민보스의 입술상"
+						resultExplain = "예민한 성격탓에 더러운걸 못보는자. 당신은 사람들의 말투와 행동에 있어 예민하게 대처하며 고쳐주는 성향으로 당신을 통해 잘못된 언행을 반성하는 사람들이 늘어나는 2021년을 보내게 될 것입니다. 예민한 성격만큼 할말은 해야 속이 후련한 덕분에 누군가는 이를 받아들이고 바뀌지만 누군가는 당신과 날이 선 대립을 할 수 있으니 예민함을 타인에게 표현할때는 주의하길 바랍니다"
+				}
+			var title = "<div class='" + prediction[0].className + "-animal-title'>" + resultTitle + "</div>"
+            var explain = "<div class='animal-explain pt-2'>" + resultExplain + "</div>"
+				$('.result-message').html(title + explain);
+            var barWidth;
+            for (let i = 0; i < maxPredictions; i++) {
+                if (prediction[i].probability.toFixed(2) > 0.1) {
+                    barWidth = Math.round(prediction[i].probability.toFixed(2) * 100) + "%";
+                } else if (prediction[i].probability.toFixed(2) >= 0.01) {
+                    barWidth = "4%"
+                } else {
+                    barWidth = "2%"
+                }
+                var labelTitle;
+                switch (prediction[i].className) {
+                    case "bow":
+                        labelTitle = "예민보스의 입술상"
+                        break;
+                    case "full":
+                        labelTitle = "무탈의 입술상"
+                        break;
+                    case "heart":
+                        labelTitle = "욕망의 입술상"
+                        break;
+                    case "round":
+                        labelTitle = "옹졸의 입술상"
+                        break;
+                    case "thin":
+                        labelTitle = "아픔의 입술상"
+                        break;
+                    case "wide":
+                        labelTitle = "충동의 입술상"
+                        break;
+                    default:
+                        labelTitle = "예민보스의 입술상"
+                }
+                var label = "<div class='animal-label d-flex align-items-center'>" + labelTitle + "</div>"
+                var bar = "<div class='bar-container position-relative container'><div class='" + prediction[i].className + "-box'></div><div class='d-flex justify-content-center align-items-center " + prediction[i].className + "-bar' style='width: " + barWidth + "'><span class='d-block percent-text'>" + Math.round(prediction[i].probability.toFixed(2) * 100) + "%</span></div></div>"
+            }
+        }
+    </script>
+	</body>
+	<!-- Copyright (c) 2020 by Aaron Vanston (https://codepen.io/aaronvanston/pen/yNYOXR)
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+ -->
+	<!-- 유튜브 조코딩 영상을 통해 제작된 사이트 입니다 -->
 </html>

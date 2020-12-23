@@ -2,6 +2,8 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Jua&display=swap');
 
+@import url("https://fonts.googleapis.com/css?family=Lato:300");
+
 body {
 font-family: 'Jua', sans-serif;
 }
@@ -17,8 +19,10 @@ font-family: 'Jua', sans-serif;
 }
 
 body {
-	background-image: url("img/back.jpg");
-	background-color: #09628a; 
+	background-image: url("img/back2.png");
+-webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
 }
 .navbar-nav .nav-item .nav-link {
 	color: #fff;
@@ -28,8 +32,13 @@ body {
 	color: #fcbb39;
 }
 
+.text-center {
+	color: #2C3E50;
+}
+
 .file-upload {
-	padding: 10% 5%;
+	width: 50%;
+	padding: 5% 5%;
 	margin: 0 auto;
 	border-radius: 10px;
 	border: solid 10px #000;
@@ -82,6 +91,8 @@ body {
 	opacity: 0;
 	cursor: pointer;
 }
+
+
 
 .image-upload-wrap {
 	width: 60%;
@@ -156,22 +167,18 @@ body {
 .navbar-light .navbar-brand {
 	line-height: 1.68;
 	text-align: left;
-	color: #fcbb39;
+	color: #000;
 }
 
 .navbar-light .navbar-brand:hover {
 	line-height: 1.68;
 	text-align: left;
-	color: #fcbb39;
-}
-
-.navbar-light .navbar-toggler {
-	border-color: #ffffff;
 	color: #fff;
 }
 
+
 .section {
-	margin-top: 50px;
+	margin-top: 5px;
 }
 
 .title {
@@ -182,19 +189,18 @@ body {
 }
 
 .subtitle {
-	line-height: 2;
 	text-align: center;
 	text-shadow: 2px 2px 5px black;
 	color: #ffff00;
 }
 
 .upload {
-    width: 20%;
+    width: 40%;
 }
 
 .upload-text {
     width: 58%;
-    font-size: 1.5rem;
+    font-size: 2.0rem;
     line-height: 1.53;
     text-align: center;
     color: #35465d;
@@ -216,6 +222,19 @@ body {
 	}
 	.navbar-brand {
 		font-size: 2rem;
+	}
+}
+
+@media screen and (max-width: 400px) {
+	html {
+		font-size: 5px;
+	}
+	.navbar-brand {
+		font-size: 1rem;
+	}	
+	.file-upload {
+		width: 75%;
+		}
 	}
 }
 
@@ -353,8 +372,12 @@ body {
 }
 .result-message {
     font-size: 2rem;
+	color: #DC7633;
 }
 
+.animal-explain {
+	color: #2C3E50;
+}
 
 .animal-explain {
     font-size: 1.5rem;
