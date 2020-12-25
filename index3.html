@@ -1,147 +1,114 @@
-Skip to content Search or jump to… Pull requests Issues Marketplace Explore @createkwak Learn Git
-and GitHub without any code! Using the Hello World guide, you’ll start a branch, write comments, and
-open a pull request. youtube-jocoding / animalface 1 210 Code Issues Pull requests Actions Projects
-Wiki Security Insights animalface/index.html @youtube-jocoding youtube-jocoding fix add(kakao,
-youtube) Latest commit a8f7b9b on 18 Apr History 1 contributor 446 lines (433 sloc) 29.8 KB
-
 <!DOCTYPE html>
 <html>
 	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+		<!-- Required meta tags -->
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" shrink-to-fit="no" />
 		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
 		<link href="https://fonts.googleapis.com/css?family=Jua&display=swap" rel="stylesheet" />
+		<!-- Bootstrap CSS -->
 		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
 			rel="stylesheet"
-			href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-			integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+			integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
 			crossorigin="anonymous"
 		/>
-		<title>동물상 테스트</title>
-		<meta name="title" content="동물상 테스트" />
+		<!-- Go to www.addthis.com/dashboard to customize your tools -->
+		<script
+			type="text/javascript"
+			src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5fdb51d4c6fc3438"
+		></script>
+		<script src="https://use.fontawesome.com/a693c81653.js"></script>
+		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+		<link rel="icon" href="favicon.ico" type="image/x-icon" />
+		<title>2021년 입술 운세테스트</title>
+		<meta name="title" content="2021년 입술 운세테스트" />
 		<meta
 			name="subject"
-			content="얼굴로 보는 인공지능 동물상 테스트, 나와 닮은 동물상을 찾아보세요!"
+			content="입술로 보는 인공지능 2021년 신년운세 테스트로 1년 동안 내 인생을 미리 알아보세요"
 		/>
 		<meta
 			name="keywords"
-			content="동물상 테스트, 인공지능 동물상 테스트, 얼굴상, 얼굴상 테스트, 나와 닮은 동물, 동물상 찾기, 얼굴로 보는 동물상, 얼굴 동물, 동물얼굴, animalface, 강아지상, 고양이상, 여우상, 사슴상, 토끼상, 곰상, 공룡상, 인공지능 동물상, AI 얼굴상, AI 동물상"
+			content="입술 테스트,인공지능 운세테스트, 2021년 운세테스트, 신년운세 테스트, 2021년 새해운세, 올해운세, 신년운세 보기, 2021 사주팔자, 2021 토정비결, 웃긴 테스트,사진 테스트,재미난 테스트"
 		/>
-		<meta name="author" content="조코딩" />
-		<link rel="stylesheet" href="style.css" />
-		<link rel="canonical" href="https://animalface.site" />
-		<meta property="og:url" content="https://animalface.site" />
+		<meta name="author" content="입술운세" />
+		<link rel="canonical" href="https://lipstest.ga" />
+		<meta property="og:url" content="https://lipstest.ga" />
 		<meta property="og:type" content="website" />
-		<meta property="og:title" content="동물상 테스트" />
+		<meta property="og:title" content="2021년 입술 운세테스트" />
 		<meta
 			property="og:description"
-			content="얼굴로 보는 인공지능 동물상 테스트, 나와 닮은 동물상을 찾아보세요! 대표 동물상 연예인 사진 데이터로 학습한 인공지능이 나의 얼굴로 동물상과 특징을 찾아드립니다. 회원가입도 필요없이 화면에서 바로 확인해보세요! 사진 데이터는 그 어디에도 전송되지 않습니다. 인공지능이 보는 나의 동물상 테스트 한번 해보세요! 강아지상? 고양이상? 여우상? 사슴상? 토끼상? 곰상? 공룡상? 얼굴상 테스트를 통해 나와 닮은 동물 찾기를 할 수 있습니다."
+			content="입술로 보는 인공지능 입술 운세 테스트, 신축년 올한해 운세가 어떻게 될지 궁금하시죠? 20201년 입술 운세테스트로 올해 있을 나의 인생을 미리 만나보세요. 수십만개의 전세계에서 학습한 입술 데이터를 바탕으로 인고잊능이 개인별 입술에 따른 맞춤형 새해운세를 빠르고 정확하게 분석해드립니다."
 		/>
-		<meta
-			property="og:image"
-			content="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fk.kakaocdn.net%2Fdn%2Fc0eq42%2FbtqCQpiFhFn%2F8KPaOP9q8PXpJFRL7if55K%2Fimg.jpg"
-		/>
-		<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
-		<link rel="icon" href="/favicon.ico" type="image/x-icon" />
-		<script
-			type="text/javascript"
-			src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5e64b3727e862b06"
-		></script>
-		<!-- Global site tag (gtag.js) - Google Analytics -->
-		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-145482737-6"></script>
-		<script>
-			window.dataLayer = window.dataLayer || [];
-
-			function gtag() {
-				dataLayer.push(arguments);
-			}
-			gtag('js', new Date());
-			gtag('config', 'UA-145482737-6');
-		</script>
+		<meta property="og:image" content="https://lipstest.ga/img/kakao.png" />
+		<link rel="stylesheet" href="style.css" />
 	</head>
 
 	<body>
-		<nav class="p-3 container navbar navbar-expand-lg navbar-light">
-			<a class="navbar-brand" href="https://animalface.site/">동물상 테스트</a>
-			<button
-				class="navbar-toggler"
-				type="button"
-				data-toggle="collapse"
-				data-target="#navbarNav"
-				aria-controls="navbarNav"
-				aria-expanded="false"
-				aria-label="Toggle navigation"
-			>
-				<span class="navbar-toggler-icon"></span>
-			</button>
-			<div class="collapse navbar-collapse" id="navbarNav">
-				<ul class="navbar-nav">
-					<li class="nav-item active">
-						<a class="nav-link" href="#"
-							>동물상 테스트
-							<span class="sr-only">(current)</span>
-						</a>
-					</li>
-					<li
-						class="nav-item active"
-						onclick="gtag('event', '조코딩 유튜브 클릭', {'event_category': '조코딩 유튜브 클릭','event_label': '상단 메뉴'});"
-					>
-						<a
-							class="nav-link"
-							id="yotube-top-link"
-							href="https://www.youtube.com/channel/UCQNE2JmbasNYbjGAcuBiRRg"
-							>조코딩 유튜브 채널</a
-						>
-					</li>
-				</ul>
+		<div class="ad__upper">
+			<ins
+				class="kakao_ad_area"
+				style="display: none;"
+				data-ad-unit="DAN-UQ0OMeKabLQfXDWx"
+				data-ad-width="320"
+				data-ad-height="50"
+			></ins>
+			<script
+				type="text/javascript"
+				src="//t1.daumcdn.net/kas/static/ba.min.js"
+				async
+			></script>
+		</div>
+		<nav class="navbar navbar-expand-lg navbar-light nav-distance">
+			<div class="container-fluid">
+				<a class="navbar-brand" href="#">입술 운세테스트</a>
+				<button
+					class="navbar-toggler"
+					type="button"
+					data-bs-toggle="collapse"
+					data-bs-target="#navbarNav"
+					aria-controls="navbarNav"
+					aria-expanded="false"
+					aria-label="Toggle navigation"
+				>
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarNav">
+					<ul class="navbar-nav">
+						<li class="nav-item">
+							<a
+								class="nav-link"
+								href="https://blog.naver.com/zhdprtm7166/222176880323"
+								>블로그</a
+							>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="https://youtu.be/dGEaEIA3_z4">유튜브</a>
+						</li>
+					</ul>
+				</div>
 			</div>
 		</nav>
 		<section class="section">
-			<h1 class="title">동물상 테스트</h1>
-			<h2 class="subtitle">얼굴로 보는 인공지능 동물상 테스트</h2>
-			<h2 class="sr-only">나는 어떤 동물과 닮았을까? 나의 동물상 찾기를 해보세요!</h2>
-			<h3 class="sr-only">
-				대표 동물상 연예인 사진 데이터로 학습한 인공지능이 나의 얼굴로 동물상과 특징을
-				찾아드립니다.
-			</h3>
-			<h4 class="sr-only">
-				본 서비스는 Google의 인공지능 teachable machine 2.0을 활용하였습니다.
-			</h4>
-			<p class="sr-only">
-				얼굴로 보는 인공지능 동물상 테스트, 나와 닮은 동물상을 찾아보세요! 대표 동물상
-				연예인 사진 데이터로 학습한 인공지능이 나의 얼굴로 동물상과 특징을 찾아드립니다.
-				회원가입도 필요없이 화면에서 바로 확인해보세요! 사진 데이터는 그 어디에도 전송되지
-				않습니다. 인공지능이 보는 나의 동물상 테스트 한번 해보세요! 강아지상? 고양이상?
-				여우상? 사슴상? 토끼상? 곰상? 공룡상? 얼굴상 테스트를 통해 나와 닮은 동물 찾기를 할
-				수 있습니다.
-			</p>
+			<h1 class="title">2021년 입술 운세테스트</h1>
+			<h2 class="subtitle">인공지능이 알려주는 새해운세</h2>
 		</section>
-		<section class="youtube pb-3" id="yotube-mid-link">
-			<div
-				class="container mt-3 youtube-cover d-flex flex-row-reverse align-items-center"
-				onclick="gtag('event', '조코딩 유튜브 클릭', {'event_category': '조코딩 유튜브 클릭','event_label': '화면 중간'});"
-			>
-				<img src="img/youtube-copy.jpg" alt="youtube-icon" class="youtube-icon" />
-				<a
-					href="https://www.youtube.com/channel/UCQNE2JmbasNYbjGAcuBiRRg"
-					class="youtube-link"
-					>By 조코딩 유튜브 채널</a
-				>
-			</div>
-		</section>
-		<h3 class="pb-2 d-flex justify-content-center">성별을 선택하세요</h3>
-		<section class="d-flex justify-content-center">
-			<p class="d-flex align-items-center pr-3">여자</p>
-			<div>
-				<input type="checkbox" id="gender" />
-				<label for="gender">
-					<span class="knob">
-						<i></i>
-					</span>
-				</label>
-			</div>
-			<p class="d-flex align-items-center pl-3">남자</p>
-		</section>
+		<center>
+			<div id="sfcg1jf59l32c6m1edty6rj9g1kkwudtp8w"></div>
+			<script
+				type="text/javascript"
+				src="https://counter8.stat.ovh/private/counter.js?c=g1jf59l32c6m1edty6rj9g1kkwudtp8w&down=async"
+				async
+			></script>
+			<noscript
+				><a href="https://www.freecounterstat.com" title="website counter"
+					><img
+						src="https://counter8.stat.ovh/private/freecounterstat.php?c=g1jf59l32c6m1edty6rj9g1kkwudtp8w"
+						border="0"
+						title="website counter"
+						alt="website counter" /></a></noscript
+			><span>명 참여했습니다</span>
+		</center>
 		<script
 			class="jsbin"
 			src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"
@@ -155,181 +122,97 @@ youtube) Latest commit a8f7b9b on 18 Apr History 1 contributor 446 lines (433 sl
 					accept="image/*"
 				/>
 				<div class="drag-text">
-					<img src="img/upload.svg" class="mt-5 pt-5 upload" />
-					<h3 class="mb-5 pb-5 pt-4 upload-text">
-						얼굴 사진을 올려놓거나 눌러서 업로드하세요!
-					</h3>
+					<img src="img/lips.svg" class="mt-5 upload" />
+					<h2 class="mb-5 pt-4 upload-text">입술<br />올려주소</h2>
 				</div>
 			</div>
+
 			<div class="file-upload-content">
 				<img class="file-upload-image" id="face-image" src="#" alt="your image" />
 				<div id="loading" class="animated bounce">
-					<div class="spinner-border" role="status">
-						<span class="sr-only">Loading...</span>
-					</div>
-					<p class="text-center">AI가 당신의 동물상을 분석중입니다.</p>
+					<div class="spinner-border" role="status"></div>
+					<p class="text-center">AI가 당신의 입술운세를 분석중입니다.</p>
 				</div>
 				<p class="result-message"></p>
-				<div id="label-container" class="d-flex flex-column justify-content-around"></div>
-				<div id="addThis" class="addthis_inline_share_toolbox_6lz1"></div>
+				<!-- Go to www.addthis.com/dashboard to customize your tools -->
+				<div class="addthis_inline_share_toolbox"></div>
 
 				<div class="pt-3 image-title-wrap">
-					<button
-						type="button p-2"
-						class="try-again-btn"
-						onclick="gaReload1();"
-						data-toggle="modal"
-						data-target="#adModal"
-					>
+					<button type="button p-2" class="try-again-btn" onclick="removeUpload()">
 						<span class="try-again-text">다른 사진으로 재시도</span>
 					</button>
 				</div>
 			</div>
 		</div>
-		<!-- <div id="coupang" class="container d-flex justify-content-center">
-        <script src="https://ads-partners.coupang.com/g.js"></script>
-        <script>
-            new PartnersCoupang.G({
-                "id": 141621,
-                "subId": null
-            });
-        </script>
-    </div> -->
-		<div class="mt-2 container d-flex justify-content-center ad-banner">
+		<h6 class="pt-2 mini-text">★올린 사진은 저장되지 않습니다</h6>
+		<center>
+			<div class="pt-2 memo">
+				<b>2021년 입술 운세테스트 안내</b><br />
+				입술운세 테스트는 10만개 전세계 입술사진을 학습한 인공지능이 이용자의 입술사진과
+				비교해 적합한 신년운세를 제공해주는 무료 운세서비스 입니다. 등록한 사진은 그
+				어떤곳에서 데이터로 남지않으니 안심하고 이용하세요. 새해맞이용으로 심심풀이겸 재미로
+				보는 신축년 운세서비스이므로 지인들과 자유롭게 결과를 공유해서 재미있게 대화를
+				나눠보세요. 단, 결과를 너무 맹신할 필요는 없습니다. 인생이란 모름지기 자기 주관대로
+				사는게 존멋이니까요.
+			</div>
+		</center>
+		<div class="ad-banner1">
 			<ins
 				class="kakao_ad_area"
 				style="display: none;"
-				data-ad-unit="DAN-1ibeto5pa83fn"
+				data-ad-unit="DAN-giFYYYac01bbNZwh"
 				data-ad-width="320"
 				data-ad-height="100"
 			></ins>
 		</div>
-		<div class="mt-2 container d-flex justify-content-center ad-banner">
+		<center>
+			<iframe
+				width="320"
+				height="200"
+				src="https://www.youtube.com/embed/eWz09nBdpBs"
+				frameborder="0"
+				allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+				allowfullscreen
+			></iframe>
+		</center>
+		<div class="pt-2 ad-banner2">
 			<ins
 				class="kakao_ad_area"
 				style="display: none;"
-				data-ad-unit="DAN-1jefy9znk6ibb"
+				data-ad-unit="DAN-qHpSvI3JtgwE3YtV"
 				data-ad-width="300"
 				data-ad-height="250"
 			></ins>
 		</div>
+		<center>
+			<div class="pt-2 ad-banner3">
+				<ins
+					class="kakao_ad_area"
+					style="display: none;"
+					data-ad-unit="DAN-iw000NeZ9ytUlYFq"
+					data-ad-width="320"
+					data-ad-height="100"
+				></ins>
+				<script
+					type="text/javascript"
+					src="//t1.daumcdn.net/kas/static/ba.min.js"
+					async
+				></script>
+			</div>
+		</center>
 		<script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script>
-		<script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script>
-		<section
-			id="yotube-bottom-link"
-			class="mt-2 d-flex flex-column justify-content-center align-items-center"
-			onclick="gtag('event', '조코딩 유튜브 클릭', {'event_category': '조코딩 유튜브 클릭','event_label': '하단 광고'});"
-		>
-			<!-- <a href="https://www.youtube.com/channel/UCQNE2JmbasNYbjGAcuBiRRg" class="d-flex flex-column justify-content-center align-items-center">
-            <img class="ad-banner"src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fk.kakaocdn.net%2Fdn%2FdHfMHS%2FbtqDfCJdLpH%2F6xKAC0w10kTrGjhll02SOK%2Fimg.jpg" alt="조코딩 유튜브 홍보"/>
-            <span>이런 앱을 직접 만들어보고 싶지 않으신가요? 조코딩 채널을 구독해보세요!</span>
-        </a> -->
-			<iframe
-				width="320"
-				height="180"
-				src="https://www.youtube.com/embed/s6SITKSN9Q0"
-				frameborder="0"
-				allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-				allowfullscreen
-			></iframe>
-			<h4 class="mt-1">이런 앱 만들면 얼마 벌까? 충격적인 수익 공개합니다</h4>
-		</section>
-		<div class="container pt-3">
-			<div id="disqus_thread"></div>
-		</div>
-		<footer class="footer pt-5 container d-flex justify-content-center">
+		<center>
+<div class="email">
+				<i class="fa fa-envelope" aria-hidden="true"></i><a href="mailto:ihansoo578@gmail.com" class="mail_contact">광고문의</a>
+			</div></center>
+		<footer class="footer pt-3 container d-flex justify-content-center">
 			<div>
-				<p>&copy; 조코딩 JoCoding 2020. All Rights Reserved.</p>
-				<!--            
-        <ul class="list-inline d-flex justify-content-center">
-            <li class="list-inline-item">
-                <a href="https://developerdk.tistory.com/46">Privacy</a>
-            </li>
-            <li class="list-inline-item">
-                <a href="https://developerdk.tistory.com/47">Terms</a>
-            </li>
-            <li class="list-inline-item">
-                <a href="https://www.youtube.com/channel/UCQNE2JmbasNYbjGAcuBiRRg">FAQ</a>
-            </li>
-        </ul>
--->
+				<p>&copy; 입술운세 Luckylips 2021. All Rights Reserved.</p>
 			</div>
 		</footer>
-		<!-- Modal -->
-		<div
-			class="modal fade"
-			id="adModal"
-			tabindex="-1"
-			role="dialog"
-			aria-labelledby="adModalLabel"
-			aria-hidden="true"
-		>
-			<div class="modal-dialog" role="document">
-				<div class="modal-content">
-					<div class="modal-header">
-						<h5 class="modal-title" id="adModalLabel">
-							(AD)광고 - 재시도를 한번 더 눌러주세요.
-						</h5>
-						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-							<span aria-hidden="true">&times;</span>
-						</button>
-					</div>
-					<div class="modal-body d-flex justify-content-center">
-						<ins
-							class="kakao_ad_area"
-							style="display: none;"
-							data-ad-unit="DAN-t89oh3sc0ew5"
-							data-ad-width="300"
-							data-ad-height="250"
-						></ins>
-					</div>
-					<div class="modal-footer d-flex justify-content-center">
-						<button type="button p-2" class="try-again-btn" onclick="gaReload2();">
-							<span class="try-again-text">다른 사진으로 재시도</span>
-						</button>
-					</div>
-				</div>
-			</div>
-		</div>
-		<script>
-			function gaReload1() {
-				gtag('event', '다른 사진으로 재시도 1차', {
-					event_category: '다른 사진으로 재시도',
-				});
-			}
-			function gaReload2() {
-				gtag('event', '다른 사진으로 재시도 2차', {
-					event_category: '다른 사진으로 재시도',
-				});
-				window.location.reload();
-			}
-		</script>
-		<script>
-			(function () {
-				var d = document,
-					s = d.createElement('script');
-				s.src = 'https://jocoding.disqus.com/embed.js';
-				s.setAttribute('data-timestamp', +new Date());
-				(d.head || d.body).appendChild(s);
-			})();
-		</script>
-		<noscript
-			>Please enable JavaScript to view the
-			<a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
-		</noscript>
 		<script
-			src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-			integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-			crossorigin="anonymous"
-		></script>
-		<script
-			src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-			integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-			crossorigin="anonymous"
-		></script>
-		<script
-			src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-			integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
 			crossorigin="anonymous"
 		></script>
 		<script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.3.1/dist/tf.min.js"></script>
@@ -346,7 +229,7 @@ youtube) Latest commit a8f7b9b on 18 Apr History 1 contributor 446 lines (433 sl
 						$('.image-title').html(input.files[0].name);
 					};
 					reader.readAsDataURL(input.files[0]);
-					init().then(function () {
+					init().then(() => {
 						console.log('hello');
 						predict();
 						$('#loading').hide();
@@ -369,135 +252,64 @@ youtube) Latest commit a8f7b9b on 18 Apr History 1 contributor 446 lines (433 sl
 			});
 		</script>
 		<script type="text/javascript">
-			let URL;
-			const urlMale = 'https://teachablemachine.withgoogle.com/models/o9D1N5TN/';
-			const urlFemale = 'https://teachablemachine.withgoogle.com/models/bB3YHn5r/';
+			// More API functions here:
+			// https://github.com/googlecreativelab/teachablemachine-community/tree/master/libraries/image
+
+			// the link to your model provided by Teachable Machine export panel
+			const URL = 'https://teachablemachine.withgoogle.com/models/XvWv0D8nY/';
+
 			let model, webcam, labelContainer, maxPredictions;
+
+			// Load the image model and setup the webcam
 			async function init() {
-				if (document.getElementById('gender').checked) {
-					URL = urlMale;
-				} else {
-					URL = urlFemale;
-				}
 				const modelURL = URL + 'model.json';
 				const metadataURL = URL + 'metadata.json';
 				model = await tmImage.load(modelURL, metadataURL);
 				maxPredictions = model.getTotalClasses();
-				labelContainer = document.getElementById('label-container');
-				for (let i = 0; i < maxPredictions; i++) {
-					var element = document.createElement('div');
-					element.classList.add('d-flex');
-					labelContainer.appendChild(element);
-				}
+				for (let i = 0; i < maxPredictions; i++);
 			}
+
 			async function predict() {
 				var image = document.getElementById('face-image');
 				const prediction = await model.predict(image, false);
 				prediction.sort((a, b) => parseFloat(b.probability) - parseFloat(a.probability));
 				console.log(prediction[0].className);
-				var resultTitle, resultExplain, resultCeleb;
-				if (document.getElementById('gender').checked) {
-					gtag('event', '동물상 테스트 수행', {
-						event_category: '동물상 테스트 수행',
-						event_label: '남자',
-					});
-					switch (prediction[0].className) {
-						case 'dog':
-							resultTitle = '귀여운 순둥이 강아지상';
-							resultExplain =
-								'다정다감하고 귀여운 당신은 모든 사람들에게 즐거움을 주는 호감형이다! 친절하고 활발한 성격으로 어디에서도 인기폭발이며 애교와 웃음이 많아 연인에게 특히나 사랑스럽다. 당신은 애인바라기로 애인의 관심이 부족하면 시무룩해지고 외로움을 타는 모습이 마치 강아지와 똑 닮았다!';
-							resultCeleb = '강아지상 연예인: 강다니엘, 백현(엑소), 박보검, 송중기';
-							gtag('event', '남자 결과 강아지상', { event_category: '남자 결과' });
-							break;
-						case 'cat':
-							resultTitle = '츤데레 매력쟁이 고양이상';
-							resultExplain =
-								'무뚝뚝한 당신의 첫인상은 차가워 보이지만 묘한 매력을 풍겨 언제나 인기가 넘친다. 자존심이 세계 1등과 맞먹지만 관심 받는 것을 좋아하고 연인에게는 은근히 애교쟁이다. 시크한 츤데레로 연인에게 끊임없이 설렘을 안겨주는 당신은 고양이와 닮았다!';
-							resultCeleb =
-								'고양이상 연예인: 황민현(뉴이스트), 시우민(엑소), 강동원, 이종석, 이준기';
-							gtag('event', '남자 결과 고양이상', { event_category: '남자 결과' });
-							break;
-						case 'rabbit':
-							resultTitle = '천진난만한 매력의 토끼상';
-							resultExplain =
-								'천진난만하고 귀여운 당신은 주변 사람들에게 기쁨을 주는 행복바이러스다! 호기심이 많아 활발하며 귀엽고 순수한 외모로 연인의 보호본능을 자극한다. 존재 자체가 상큼한 당신은 특별한 애교 없이도 연인에게 너무나도 사랑스럽다!';
-							resultCeleb =
-								'토끼상 연예인: 정국(방탄소년단), 바비(아이콘), 박지훈(워너원), 수호(엑소)';
-							gtag('event', '남자 결과 토끼상', { event_category: '남자 결과' });
-							break;
-						case 'dinosaur':
-							resultTitle = '따뜻한 나쁜남자 공룡상';
-							resultExplain =
-								'무심한 성격에 첫인상은 나쁜 남자 같지만, 알고 보면 따뜻함이 묻어나는 당신! 시크한 매력에 선뜻 다가가지 못하지만 한번 다가가면 헤어나올 수 없는 터프한 매력을 가진 카리스마 있는 남자다.';
-							resultCeleb =
-								'공룡상 연예인: 윤두준(하이라이트), 이민기, 김우빈, 육성재(비투비), 공유';
-							gtag('event', '남자 결과 공룡상', { event_category: '남자 결과' });
-							break;
-						case 'bear':
-							resultTitle = '포근한 매력의 곰상';
-							resultExplain =
-								'첫 인상은 무서워 보이지만 알고 보면 귀여운 매력의 당신! 꼼꼼하고 섬세한 성격으로 연인을 헌신적으로 챙겨주는 당신은 연인에게 듬직한 존재! 포근한 매력에 듬직함까지 갖춘 최고의 남자다!';
-							resultCeleb = '곰상 연예인: 마동석, 조진웅, 조세호, 안재홍';
-							gtag('event', '남자 결과 곰상', { event_category: '남자 결과' });
-							break;
-						default:
-							resultTitle = '알수없음';
-							resultExplain = '';
-							resultCeleb = '';
-							gtag('event', '남자 결과 알수없음', { event_category: '남자 결과' });
-					}
-				} else {
-					gtag('event', '동물상 테스트 수행', {
-						event_category: '동물상 테스트 수행',
-						event_label: '여자',
-					});
-					switch (prediction[0].className) {
-						case 'dog':
-							resultTitle = '귀여운 순둥이 강아지상';
-							resultExplain =
-								'다정다감하고 귀여운 당신은 모든 사람들에게 즐거움을 주는 호감형이다! 상냥하고 활발한 성격으로 어디에서도 인기폭발이지만, 애교와 웃음이 많아 연인에게 특히나 사랑스럽다. 당신은 애인바라기로 애인의 관심이 부족하면 시무룩해지고 외로움을 타는 모습이 마치 강아지와 똑 닮았다!';
-							resultCeleb =
-								'강아지상 연예인: 박보영, 아이유, 윤승아, 민아(걸스데이), 한지민';
-							gtag('event', '여자 결과 강아지상', { event_category: '여자 결과' });
-							break;
-						case 'cat':
-							resultTitle = '츤데레 매력쟁이 고양이상';
-							resultExplain =
-								'도도하고 섹시한 당신은 첫인상은 차가워 보이지만 묘한 매력을 풍겨 언제나 인기가 넘친다. 자존심이 세계 1등과 맞먹지만 관심 받는 것을 좋아하고 애인에게 관심이 받고 싶을 때는 애교도 부릴 줄 아는 귀여운 매력을 가졌다. 시크한 츤데레로 연인에게 끊임없이 설렘을 안겨주는 당신은 고양이와 닮았다!';
-							resultCeleb =
-								'고양이상 연예인: 안소희(원더걸스), 오연서, 한예슬, 이성경, 이효리';
-							gtag('event', '여자 결과 고양이상', { event_category: '여자 결과' });
-							break;
-						case 'rabbit':
-							resultTitle = '상큼발랄한 매력의 토끼상';
-							resultExplain =
-								'발랄하고 귀여운 당신은 주변 사람들에게 기쁨을 주는 행복바이러스다! 호기심이 많아 활발하며 귀엽고 순수한 외모로 연인의 보호본능을 자극한다. 존재 자체가 상큼하고 깜찍한 당신은 특별한 애교 없이도 연인에게 너무나도 사랑스럽다!';
-							resultCeleb =
-								'토끼상 연예인: 수지, 나연(트와이스), 예린(여자친구), 한승연(카라), 문채원';
-							gtag('event', '여자 결과 토끼상', { event_category: '여자 결과' });
-							break;
-						case 'deer':
-							resultTitle = '온순하고 우아한 사슴상';
-							resultExplain =
-								'맑고 영롱한 분위기의 당신은 사슴처럼 차분한 성격의 소유자다. 초롱초롱한 눈망울이 당신의 가장 큰 트레이드마크며 따스하고 온순한 눈빛을 가져 사랑스러움을 항상 머금고 있다! 부끄러움이 많아 애정표현이 낯설은 당신은 연인에게조차 신비한 존재지만 따뜻한 성격으로 연인의 마음을 사로잡는 능력을 가졌다.';
-							resultCeleb =
-								'사슴상 연예인: 윤아(소녀시대), 이연희, 고아라, 문근영, 정유미(부산행 배우)';
-							gtag('event', '여자 결과 사슴상', { event_category: '여자 결과' });
-							break;
-						case 'fox':
-							resultTitle = '섹시한 밀당고수 여우상';
-							resultExplain =
-								'사람을 홀리는 매력을 가진 당신은 선뜻 다가가기 힘든 섹시한 매력을 가졌다. 우아한 외모에 더해 뛰어난 센스의 성격을 가진 당신은 어딜가도 주목받는 주인공이다! 사교적인 성격을 가져 연인에게도 적극적으로 애정표현을 하지만 밀당의 고수인 당신은 연인의 혼을 쏙 빼놓는 매력쟁이다.';
-							resultCeleb =
-								'여우상 연예인: 경리(나인뮤지스), 예지(있지), 한혜진(모델), 헤이즈, 지연(티아라)';
-							gtag('event', '여자 결과 여우상', { event_category: '여자 결과' });
-							break;
-						default:
-							resultTitle = '알수없음';
-							resultExplain = '';
-							resultCeleb = '';
-							gtag('event', '여자 결과 알수없음', { event_category: '여자 결과' });
-					}
+				var resultTitle, resultExplain;
+				switch (prediction[0].className) {
+					case 'bow':
+						resultTitle = '예민보스의 입술상';
+						resultExplain =
+							'예민한 성격탓에 더러운걸 못보는자. 당신은 사람들의 말투와 행동에 있어 예민하게 대처하며 고쳐주는 성향으로 당신을 통해 잘못된 언행을 반성하는 사람들이 늘어나는 2021년을 보내게 될 것입니다. 예민한 성격만큼 할말은 해야 속이 후련한 덕분에 누군가는 이를 받아들이고 바뀌지만 누군가는 당신과 날이 선 대립을 할 수 있으니 예민함을 타인에게 표현할때는 주의하길 바랍니다';
+						break;
+					case 'full':
+						resultTitle = '무탈의 입술상';
+						resultExplain =
+							'무탈한 삶을 사는자. 당신은 누구보다 평범한 2021년을 살 것입니다. 작년보다 더 나아지지도 그렇다고 더 암울하지도 않은 삶을 살게 될 것입니다. 돈도 사랑도 인간관계도 얻을 것도 잃을 것도 없는 지극히 평범한 신축년 한해를 보내게 될것입니다. 단, 본인의 성향과 다르게 주제넘게 참견한다면 큰 화를 당할 수 있으니 함부로 남의 일에 나서는 일은 없도록 주의하길 바랍니다';
+						break;
+					case 'heart':
+						resultTitle = '욕망의 입술상';
+						resultExplain =
+							'남보다 하나라도 더 먹어야하고 하나라도 더 잘나야하는 욕심주의자. 당신의 2021년은 누구보다 앞선 삶을 살게되지만 그런 욕심으로 인해서 다가오는 스트레스가 발목을 잡을 수 있습니다. 가만히 있으면 답답함을 느끼지만 쉴때를 아는것 또한 중요한 것임을 명심해야 합니다. 건강에 어느 떄보다 유의해야할 한해를 보낼 수 있으니 미주의하길 바랍니다';
+						break;
+					case 'round':
+						resultTitle = '옹졸의 입술상';
+						resultExplain =
+							'속좁은 밴댕이가 환생한 자. 당신은 사람들의 사소한 말 한마디에도 쉽게 영향을 받으며 상처 받는 2021년을 살 것입니다. 혼자서 하는 일을 택해야 모든 일이 수월하게 잘 풀리고 원하는 바를 이룰 수 있습니다. 만일 타인과 같이 하는 공부를 하거나 일 등으로 엮이게 된다면 잦은 트러블과 불화 및 구설수에 오를 수 있으니 일을 택함에 있어 주의하길 바랍니다';
+						break;
+					case 'thin':
+						resultTitle = '아픔의 입술상';
+						resultExplain =
+							'몸도 마음도 아픔이 많은자. 당신은 타인을 먼저 배려하다가 오히려 몸도 마음도 상처를 받는 2021년을 살 것입니다. 마음이 따뜻한걸 당연하게 생각하는 사람들이 많으니 이런 이들과는 안전거리를 두는 연습을 하는게 좀더 대우받을 수 있다는 점을 명심하길 바랍니다. 주는 만큼 돌아오지 않는 사람도 있다는걸 뒤늦게 깨닳으면 그만큼 고통의 시간이 길어지니 가까운 사람이라고 함부로 퍼주지말고 때로는 이기심을 부리길 바랍니다';
+						break;
+					case 'wide':
+						resultTitle = '충동의 입술상';
+						resultExplain =
+							'감정의 파도에 올라탄 자. 당신은 감정이 롤러코스터를 타는 2021년을 살 것입니다. 인간관계에 있어서 극도의 기쁨과 슬픔을 함께 경험하는 한해가 될 것입니다. 평소에 알던 지인들과 언행이나 금전적인 문제가 엮여서 화를 초래할 수 있으니 아무리 가까운 사람일지라도 카톡이나 문자 보다는 전화로 의사표현을 하는게 오해의 소지를 줄일 수 있으니 언행을 각별히 주의하길 바랍니다.';
+						break;
+					default:
+						resultTitle = '무게의 입술상';
+						resultExplain =
+							'폼잡고 무게잡는게 일상인자. 당신은 맡은 일을 책임있게 하는 성향으로 2021년 본인이 원하는 모든 일들의 대부분을 착실하게 이루어나갈 것입니다. 당신은 말단에서 일하기보단 관리직으로 사람들을 관리하고 통제할때 본인의 능력을 200% 발휘 할 수 있으니 이런 점을 참고해 일을 선택할 필요가 있습니다. 돈도 사랑도 모든걸 풍족하게 가질 수 있으나 너무 무게만 잡고 다른 사람의 말에 귀기울이지 않는다면 명성에 흠이갈 수 있으니 주의하길 바랍니다';
 				}
 				var title =
 					"<div class='" +
@@ -506,13 +318,7 @@ youtube) Latest commit a8f7b9b on 18 Apr History 1 contributor 446 lines (433 sl
 					resultTitle +
 					'</div>';
 				var explain = "<div class='animal-explain pt-2'>" + resultExplain + '</div>';
-				var celeb =
-					"<div class='" +
-					prediction[0].className +
-					"-animal-celeb pt-2 pb-2'>" +
-					resultCeleb +
-					'</div>';
-				$('.result-message').html(title + explain + celeb);
+				$('.result-message').html(title + explain);
 				var barWidth;
 				for (let i = 0; i < maxPredictions; i++) {
 					if (prediction[i].probability.toFixed(2) > 0.1) {
@@ -524,29 +330,27 @@ youtube) Latest commit a8f7b9b on 18 Apr History 1 contributor 446 lines (433 sl
 					}
 					var labelTitle;
 					switch (prediction[i].className) {
-						case 'dog':
-							labelTitle = '강아지상';
+						case 'bow':
+							labelTitle = '예민보스의 입술상';
 							break;
-						case 'cat':
-							labelTitle = '고양이상';
+						case 'full':
+							labelTitle = '무탈의 입술상';
 							break;
-						case 'rabbit':
-							labelTitle = '토끼상';
+						case 'heart':
+							labelTitle = '욕망의 입술상';
 							break;
-						case 'dinosaur':
-							labelTitle = '공룡상';
+						case 'round':
+							labelTitle = '옹졸의 입술상';
 							break;
-						case 'bear':
-							labelTitle = '곰상';
+						case 'thin':
+							labelTitle = '아픔의 입술상';
 							break;
-						case 'deer':
-							labelTitle = '사슴상';
-							break;
-						case 'fox':
-							labelTitle = '여우상';
+						case 'wide':
+							labelTitle = '충동의 입술상';
 							break;
 						default:
-							labelTitle = '알수없음';
+							labelTitle = '무게의 입술상';
+							break;
 					}
 					var label =
 						"<div class='animal-label d-flex align-items-center'>" +
@@ -562,40 +366,36 @@ youtube) Latest commit a8f7b9b on 18 Apr History 1 contributor 446 lines (433 sl
 						"'><span class='d-block percent-text'>" +
 						Math.round(prediction[i].probability.toFixed(2) * 100) +
 						'%</span></div></div>';
-					labelContainer.childNodes[i].innerHTML = label + bar;
 				}
 			}
 		</script>
 		<script>
-			function iosApp() {
-				document.getElementById('coupang').style.display = 'none';
-				$('#coupang ins').hide();
-				document.getElementById('addThis').style.display = 'none';
-				document.getElementById('disqus_thread').style.display = 'none';
-				var kakao = document.getElementsByClassName('kakao_ad_area');
-				for (var i = 0; i < kakao.length; i++) {
-					if (kakao[i]) {
-						kakao[i].style.display = 'none';
-					}
+			// 상단 광고 js
+			const adUpper = document.querySelector('.ad__upper');
+			const adUpperBtn = document.querySelector('.ad__upper__hide__btn');
+
+			function handleAdUpper() {
+				if (adUpper.classList[2] === undefined) {
+					adUpper.classList.add('snackbar__anim__up');
+				} else if (adUpper.classList[2] === 'snackbar__anim__up') {
+					adUpper.classList.remove('snackbar__anim__up');
 				}
-				document.getElementById('yotube-top-link').style.display = 'none';
-				document.getElementById('yotube-mid-link').style.display = 'none';
-				document.getElementById('yotube-bottom-link').style.display = 'none';
+			}
+			if (adUpper) {
+				adUpperBtn.addEventListener('click', handleAdUpper);
+				setTimeout(function () {
+					adUpper.classList.add('snackbar__anim__result');
+				}, 1000);
 			}
 		</script>
 	</body>
-	<!-- 
-image input box
-Copyright (c) 2020 by Aaron Vanston (https://codepen.io/aaronvanston/pen/yNYOXR)
+	<!-- Copyright (c) 2020 by Aaron Vanston (https://codepen.io/aaronvanston/pen/yNYOXR)
+
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
 The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
-gender toggle
-Copyright (c) 2020 by Mert Cukuren (https://codepen.io/knyttneve/pen/bPpEZY)
-Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
-The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  -->
+	<!-- 조코딩 유튜브채널의 도움을 받아서 제작되었습니다-->
 </html>
-© 2020 GitHub, Inc. Terms Privacy Security Status Help Contact GitHub Pricing API Training Blog
-About

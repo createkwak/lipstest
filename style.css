@@ -529,6 +529,12 @@ input:checked + label > .knob > i:before {
     margin: 0 auto;
 }
 
+.ad-banner3 {
+	width: 320px;
+    margin: 0 auto;
+}
+
+
 .mini-text {
 	text-align: center;
 }
@@ -542,4 +548,60 @@ input:checked + label > .knob > i:before {
     font-size: 14px;
     line-height: 25px;
     color: rgb(93, 93, 93);
+}
+
+.email {
+	background-color: #fbfbf1;
+	width: 320px;
+    border-radius: 10px;
+    padding: 5px;
+    font-size: 18px;
+    color: rgb(93, 93, 93);
+}
+
+.mail_contact {
+text-decoration: none;
+}
+	
+.fa-envelope {
+	margin-right: 10px;
+}
+
+.ad__upper {
+position: fixed;
+    top: 0px;
+    opacity: 0;
+    width: 100%;
+    transition: 0.5s transform;
+    transform: translateY(0px);
+    margin-top: -84px;
+    z-index: 99;
+}
+
+.ad__upper__line {
+    width: 100%;
+    height: 4px;
+    margin-top: -7px;
+    background-color: rgb(223, 223, 223);
+    border-top: 1px solid rgba(70, 70, 70, 0.3);
+}
+
+.ad__upper__hide__btn {
+    display: flex;
+    justify-content: center;
+    width: 60px;
+    padding: 6px 0 8px;
+    background-color: rgb(223, 223, 223);
+    border-radius: 0 0 10px 10px;
+	cursor: pointer;
+}
+
+.snackbar__anim__result {
+    transform: translateY(84px);
+    opacity: 1;
+}
+
+.snackbar__anim__up {
+    opacity: 1;
+    transform: translateY(0px);
 }
