@@ -8,6 +8,12 @@ body {
 font-family: 'Jua', sans-serif;
 }
 
+body,html {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+}
+
 p {
 font-family: 'Jua', sans-serif;
 	color: #fff;
@@ -20,20 +26,31 @@ font-family: 'Jua', sans-serif;
 
 body {
 	background-image: url("img/back2.png");
--webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
+	min-height: 100%;
+	background-size: cover;
+    background-repeat: no-repeat;
+	background-color: #ffcb07;
 }
+
+
+#sfcg1jf59l32c6m1edty6rj9g1kkwudtp8w {
+	display: inline-block;
+}
+
 .navbar-nav .nav-item .nav-link {
 	color: #fff;
 }
 
 .navbar-nav .nav-item .nav-link:hover {
-	color: #fcbb39;
+	color: #F26458;
 }
 
 .text-center {
 	color: #2C3E50;
+}
+
+.counter-text {
+	font-size: 15px;
 }
 
 .file-upload {
@@ -170,12 +187,6 @@ body {
 	color: #000;
 }
 
-.navbar-light .navbar-brand:hover {
-	line-height: 1.68;
-	text-align: left;
-	color: #fff;
-}
-
 
 .section {
 	margin-top: 5px;
@@ -190,8 +201,6 @@ body {
 
 .subtitle {
 	text-align: center;
-	text-shadow: 2px 2px 5px black;
-	color: #ffff00;
 }
 
 .upload {
@@ -223,18 +232,8 @@ body {
 	.navbar-brand {
 		font-size: 2rem;
 	}
-}
-
-@media screen and (max-width: 400px) {
-	html {
-		font-size: 5px;
-	}
-	.navbar-brand {
-		font-size: 1rem;
-	}	
-	.file-upload {
-		width: 75%;
-		}
+	.counter-text {
+	font-size: 10px;
 	}
 }
 

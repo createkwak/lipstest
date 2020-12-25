@@ -8,6 +8,12 @@ body {
 font-family: 'Jua', sans-serif;
 }
 
+body,html {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+}
+
 p {
 font-family: 'Jua', sans-serif;
 	color: #fff;
@@ -20,6 +26,8 @@ font-family: 'Jua', sans-serif;
 
 body {
 	background-image: url("img/back2.png");
+	height: 100vh;
+	background-position: center;
 	background-size: cover;
     background-repeat: no-repeat;
 	background-color: #ffcb07;
@@ -27,7 +35,7 @@ body {
 
 
 #sfcg1jf59l32c6m1edty6rj9g1kkwudtp8w {
-	display: inline-block;
+	display: inline;
 }
 
 .navbar-nav .nav-item .nav-link {
@@ -47,7 +55,7 @@ body {
 }
 
 .file-upload {
-	width: 50%;
+	width: 60%;
 	padding: 5% 5%;
 	margin: 0 auto;
 	border-radius: 10px;
@@ -105,7 +113,6 @@ body {
 
 
 .image-upload-wrap {
-	width: 60%;
 	margin: 0 auto;
 	position: relative;
 	object-fit: contain;
@@ -186,7 +193,6 @@ body {
 }
 
 .title {
-	line-height: 2;
 	text-align: center;
 	text-shadow: 2px 2px 5px black;
 	color: #fff;
@@ -227,6 +233,21 @@ body {
 	}
 	.counter-text {
 	font-size: 10px;
+	}
+}
+
+@media screen and (max-width: 400px) {
+	html {
+		font-size: 10px;
+	}
+	.navbar-brand {
+		font-size: 2rem;
+	}
+	.counter-text {
+	font-size: 10px;
+	}
+	.file-upload {
+		width: 80%;
 	}
 }
 
@@ -498,11 +519,27 @@ input:checked + label > .knob > i:before {
   transform: rotate(134deg);
 }
 
-.ad-banner {
+.ad-banner1 {
     width: 320px;
+    margin: 0 auto;
+}
+
+.ad-banner2 {
+	width: 300px;
     margin: 0 auto;
 }
 
 .mini-text {
 	text-align: center;
+}
+
+.memo {
+	background-color: #fbfbf1;
+	margin-bottom: 10px;
+	width: 320px;
+    border-radius: 10px;
+    padding: 20px;
+    font-size: 14px;
+    line-height: 25px;
+    color: rgb(93, 93, 93);
 }
