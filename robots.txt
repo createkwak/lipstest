@@ -1,0 +1,4 @@
+User-agent: *
+Allow:/
+
+Sitemap: https://lipstest.ga/sitemap.xml
