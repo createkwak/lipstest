@@ -18,6 +18,7 @@
 			type="text/javascript"
 			src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5fdb51d4c6fc3438"
 		></script>
+		<script src="https://use.fontawesome.com/a693c81653.js"></script>
 		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
 		<link rel="icon" href="favicon.ico" type="image/x-icon" />
 		<title>2021년 입술 운세테스트</title>
@@ -44,6 +45,22 @@
 	</head>
 
 	<body>
+		<div class="ad__upper">
+			<ins
+				class="kakao_ad_area"
+				style="display: none;"
+				data-ad-unit="DAN-UQ0OMeKabLQfXDWx"
+				data-ad-width="320"
+				data-ad-height="50"
+			></ins>
+			<script
+				type="text/javascript"
+				src="//t1.daumcdn.net/kas/static/ba.min.js"
+				async
+			></script>
+			       <div class="ad__upper__line"></div>
+        <div class="ad__upper__hide__btn">x</div>
+		</div>
 		<nav class="navbar navbar-expand-lg navbar-light nav-distance">
 			<div class="container-fluid">
 				<a class="navbar-brand" href="#">입술 운세테스트</a>
@@ -170,7 +187,7 @@
 			></ins>
 		</div>
 		<center>
-			<div class="pt-2 ad-banner-3">
+			<div class="pt-2 ad-banner3">
 				<ins
 					class="kakao_ad_area"
 					style="display: none;"
@@ -186,8 +203,13 @@
 			</div>
 		</center>
 		<script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script>
-
-		<footer class="footer pt-5 container d-flex justify-content-center">
+		<center>
+			<div class="email">
+				<i class="fa fa-envelope" aria-hidden="true"></i
+				><a href="mailto:ihansoo578@gmail.com" class="mail_contact">광고문의</a>
+			</div>
+		</center>
+		<footer class="footer pt-3 container d-flex justify-content-center">
 			<div>
 				<p>&copy; 입술운세 Luckylips 2021. All Rights Reserved.</p>
 			</div>
@@ -349,6 +371,25 @@
 						Math.round(prediction[i].probability.toFixed(2) * 100) +
 						'%</span></div></div>';
 				}
+			}
+		</script>
+		<script>
+			// 상단 광고 js
+			const adUpper = document.querySelector('.ad__upper');
+			const adUpperBtn = document.querySelector('.ad__upper__hide__btn');
+
+			function handleAdUpper() {
+				if (adUpper.classList[2] === undefined) {
+					adUpper.classList.add('snackbar__anim__up');
+				} else if (adUpper.classList[2] === 'snackbar__anim__up') {
+					adUpper.classList.remove('snackbar__anim__up');
+				}
+			}
+			if (adUpper) {
+				adUpperBtn.addEventListener('click', handleAdUpper);
+				setTimeout(function () {
+					adUpper.classList.add('snackbar__anim__result');
+				}, 1000);
 			}
 		</script>
 	</body>
